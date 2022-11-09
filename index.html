@@ -1,10 +1,97 @@
-<html>
-  <head>
-    <title>DiaryTodo-Web</title>
-  </head>
-  <body>
-    <article class="markdown-body entry-content container-lg" itemprop="text"><h1 dir="auto"><a id="user-content-diarytodo-web" class="anchor" aria-hidden="true" href="#diarytodo-web"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>diarytodo-web</h1>
-      <p dir="auto">An webpage repo for DiaryTodo</p>
-    </article>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN" class="jesse205-theme-html-auto">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="sharename" itemprop="name" content="Aide Lua Pro" />
+  <meta name="shareimage" itemprop="image" content="https://p.qlogo.cn/gh/628045718/628045718/" />
+  <meta name="description" itemprop="description" content="依赖 AIDE ，使用 Lua 快速、高效开发的工具" />
+  <meta name="keywords" itemprop="keywords" content="lua|androlua|alua|aidelua" />
+  <meta name="author" content="&copy;0047ol" />
+  <title>Aide Lua</title>
+  <link rel="icon" sizes="any" mask="" href="favicon.png">
+
+  <!-- jQuery -->
+  <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+
+  <!-- MDUI -->
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+  <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+  <!-- Jesse205Library -->
+  <link rel="stylesheet" href="/css/jesse205.css" />
+  <script src="/js/jesse205.js"></script>
+
+  <!-- 当前页面 -->
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="js/index.js"></script>
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-indigo mdui-theme-layout-auto">
+  <header>
+    <img
+      src=""
+      draggable="false" alt />
+    <div>
+      <img class="icon jesse205-shadow-4" src="https://p.qlogo.cn/gh/628045718/628045718/" alt />
+      <h1 class="app-title mdui-text-color-theme-accent">Aide Lua Pro</h1>
+      <p class="app-summary mdui-text-color-theme-secondary">一款依赖Aide的Lua编辑器</p>
+      <div class="app-goup-btn">
+        <a id="download" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
+          href="https://gitee.com/Jesse205/AideLua/releases" target="_blank">下载</a>
+        <a class="mdui-btn mdui-ripple" href="https://gitee.com/Jesse205/AideLua" target="_blank">Gitee 仓库</a>
+      </div>
+    </div>
+  </header>
+  <!-- 标题栏 -->
+  <div id="appbar" class="mdui-appbar jesse205-shadow-transition mdui-appbar-fixed mdui-shadow-0">
+    <div id="toolbar" class="toolbar toolbar-top mdui-toolbar">
+      <a class="mdui-typo-title">Aide Lua Pro</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <div id="menus" class="jesse205-toolbar-menusSpace">
+      </div>
+      <a class="mdui-btn mdui-btn-icon mdui-hidden-sm-up" mdui-menu="{target: '#menu-more'}" mdui-tooltip="{'content':'更多选项'}">
+        <i class="mdui-icon material-icons">more_vert</i>
+      </a>
+      <ul class="mdui-menu" id="menu-more">
+      </ul>
+    </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="screenshots group mdui-container-fluid mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-4">
+    <div>
+      <div id="screenshots">
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="group mdui-row">
+    <div class="subgroup mdui-col-xs-12 mdui-col-md-4">
+      <h1 class="title mdui-text-color-theme-accent">关于我们</h1>
+      <div id="developers" class="developers">
+      </div>
+    </div>
+    <div class="subgroup mdui-col-xs-12 mdui-col-md-4">
+      <h1 class="title mdui-text-color-theme-accent">联系我们</h1>
+      <div id="contact"
+        class="item contact bottom-links mdui-row-xs-2 mdui-row-sm-4 mdui-row-md-2 mdui-row-lg-3 mdui-row-xl-4">
+      </div>
+    </div>
+    <div class="subgroup mdui-col-xs-12 mdui-col-md-4">
+      <h1 class="title mdui-text-color-theme-accent">友情链接</h1>
+      <div id="links"
+        class="item links bottom-links mdui-row-xs-2 mdui-row-sm-4 mdui-row-md-2 mdui-row-lg-4 mdui-row-xl-5">
+      </div>
+    </div>
+
+  </div>
+  <footer class="">
+    <p> Copyright 2022 AideLua All Rights Reserved</p>
+  </footer>
+</body>
+
 </html>
